@@ -8,10 +8,10 @@
 <body>
 	<nav>
 	    <ul>
-		    <li><a href="#">Home</a></li>
-		    <li><a href="create_diary.html">create entry</a></li>
-		    <li><a href="login.html">Logout</a></li>
-        <li><a href="account.html">Account</a></li>
+		    <li><a href="{{url_for('create_entry')}}">Home</a></li>
+		    <li><a href="{{url_for('create_entry')}}">create entry</a></li>
+		    <li><a href="{{url_for('login')}}">Logout</a></li>
+        <li><a href="{{url_for('account')}}">Account</a></li>
 	    </ul>
     </nav>
     <div style="overflow-x:auto;">

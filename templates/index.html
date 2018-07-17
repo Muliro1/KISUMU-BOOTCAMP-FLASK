@@ -9,8 +9,8 @@
 	<ul>
 		<li><a href="#">Home</a></li>
 		<li><a href="#">News</a></li>
-		<li><a href="login.html">Logout</a></li>
-		<li><a href="entries.html">Entries</a></li>
+		<li><a href="{{url_for('login')}}">Logout</a></li>
+		<li><a href="{{url_for('get_entries')}}">Entries</a></li>
 	</ul>
     <form name = "signup"  action = "?" method = 'post'>
     	<fieldset>
@@ -33,7 +33,7 @@
      	    <a href="#">
      	        Terms & Privacy
              </a>
-        <p class = 'bottom'>Already have an account? login <a href = 'login.html'> here </a></p>
+        <p class = 'bottom'>Already have an account? login <a href = '{{url_for("login")}}'> here </a></p>
 	</small>
 	<script type = 'text/javascript'>
 		function MyFunction(){

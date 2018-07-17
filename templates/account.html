@@ -9,16 +9,16 @@
 </head>
 <body>
 	<ul>
-		<li><a href="create_diary.html">Home</a></li>
+		<li><a href="{{url_for('create_entry')}}">Home</a></li>
 		<li><a href="#">News</a></li>
 		<li><a href="#">Contact</a></li>
-		<li><a href="create_diary.html">Entries</a></li>
+		<li><a href="{{url_for('get_entries')}}">Entries</a></li>
 	</ul>
     <div>
     	<img src = 'me.jpg' alt = 'profile_pic' width = 150 height = 150>
     	 <p class="title">Michael Muliro</p>
     	 <p>Mulirokhaemba@gmail.com</p>
-    	 <p>Six diary<a href = 'entries.html'>entries</a></p>
+    	 <p>Six diary<a href = "{{url_for('get_entries')}}">entries</a></p>
     </div>
     <fieldset>
         <table id="customers">
