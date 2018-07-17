@@ -11,5 +11,14 @@ def register():
 	'''
 	return render_template('index.html')
 
+@app.route('/api/v1/login', methods = ['GET', 'POST'])
+def login():
+	'''
+	This view function displays a registration form for users to log into their account
+	'''
+	return render_template('login.html')
+
+
+
 if __name__ == '__main__':
 	app.run(debug = True)
