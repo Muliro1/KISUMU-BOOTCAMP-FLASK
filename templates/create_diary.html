@@ -10,8 +10,8 @@
 	    <ul>
 		    <li><a href="#">Home</a></li>
 		    <li><a href="#">News</a></li>
-		    <li><a href="login.html">Logout</a></li>
-		    <li><a href="entries.html">Entries</a></li>
+		    <li><a href="{{url_for('login')}}">Logout</a></li>
+		    <li><a href="{{url_for('get_entries')}}">Entries</a></li>
 	    </ul>
     </nav>
     <form name = "CREATE DIARY"  action = "?" method = 'post'>

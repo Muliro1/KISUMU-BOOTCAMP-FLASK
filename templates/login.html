@@ -9,10 +9,10 @@
 </head>
 <body>
 	<ul>
-		<li><a href="create_diary.html">Home</a></li>
+		<li><a href="{{url_for('create_entry')}}">Home</a></li>
 		<li><a href="#">News</a></li>
 		<li><a href="#">Contact</a></li>
-		<li><a href="create_diary.html">Entries</a></li>
+		<li><a href="{{url_for('get_entries')}}">Entries</a></li>
 	</ul>
 	<form action = "?" id = "input" method = 'post' name = 'input' onsubmit="return MyFunction();">
 	    <fieldset>
@@ -26,13 +26,13 @@
 		 	        Password:
 		        </p>
 		        <input type = "password" name = "password" required size = "40">
-		        <a href = 'create_diary.html'><button class="button" onclick = 'return MyFunction()'>Log in</button></a>
+		        <a href = "{{url_for('create_entry')}}"><button class="button" onclick = 'return MyFunction()'>Log in</button></a>
 	        </div>
 	    </fieldset>
     </form>
     <p class = 'bottom'>
 		<small>
-		    don't have an account? sign up <a href = "index.html"> here. </a>
+		    don't have an account? sign up <a href = "{{url_for('register')}}"> here. </a>
 	    </small>
 	</p>
     <script type = 'text/javascript'>
